@@ -1,0 +1,16 @@
+import json
+
+assignmentsInfo = {
+    "firstName": "Yixiao",                          # [1] put your first name here (spelled as in Brightspace)
+    "lastName": "Tang",                          # [2] put your last name here (spelled as in Brightspace)
+    "studentId": "s3855422",                     # [3] put your student id (spelled as in Brightspace)
+    "sshGitHub": "git@github.com:YTangNL/EfDS.git"   # [4] copy here the SSH address of your GitHub repository
+                                                  #     (you may find it when you press the green Code button)
+}
+
+with open( "assignments.json", "w" ) as f:        # [5] run this cell to generate assignments.json file
+    json.dump( obj = assignmentsInfo, fp = f )
+
+                                                  # [6] submit the assignments.json file as a solution of
+                                                  #     "SSH link to your GitHub repository"
+                                                  #     assignment
